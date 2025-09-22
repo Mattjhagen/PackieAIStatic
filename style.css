@@ -150,6 +150,45 @@ a {
     color: var(--text-color);
 }
 
+.hero-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.try-us-out {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.try-text {
+    font-size: 1rem;
+    color: var(--text-muted);
+    margin: 0;
+}
+
+.phone-number {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--secondary-color);
+    border-radius: 8px;
+    background-color: rgba(0, 221, 187, 0.1);
+}
+
+.phone-number:hover {
+    background-color: var(--secondary-color);
+    color: var(--dark-bg);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 221, 187, 0.3);
+}
+
 /* --- How It Works Section --- */
 .how-it-works-section {
     padding: 4rem 0;
@@ -254,6 +293,15 @@ a {
 
     .hero-content h2 {
         font-size: 2.5rem;
+    }
+
+    .hero-actions {
+        gap: 1rem;
+    }
+
+    .phone-number {
+        font-size: 1.3rem;
+        padding: 0.4rem 0.8rem;
     }
 
     .steps-container {
